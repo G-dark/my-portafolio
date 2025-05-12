@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  cursor: url("../images/cursor/cursor.png"), auto;
+  background-color: white;
+  margin: 0;
+  height: 100vh;
+}
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.background {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  transition: filter 0.3s ease;
+}
+
+
+.blurred {
+  filter: blur(8px);
+}
+
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+}
+
+a, button {
+  cursor: url("../images/cursor/mano-cursor.png"), auto;
+}
+
+.indie-flower-regular2 {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 9px;
+}
+
+ul,
+li {
+  margin: 0;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: black;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header,
+nav {
+  background-color: beige;
+  height: 80px;
+  margin-left: 5.8vw;
+  margin-right: 3vw;
+}
+
+img {
+  font-size: 9px;
+}
+.boxnav {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.triangulo {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 6vw solid white;
+  border-right: 0px solid transparent;
+  border-bottom: 11.6vh solid beige;
+}
+.triangulo2 {
+  position: absolute;
+  margin-left: 93vw;
+  margin-top: -11.6vh;
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 6vw solid white;
+  border-bottom: 11.6vh solid beige;
+}
+
+.upsideFridge {
+  border: 5px solid black;
+  height: 100vh;
+}
+
+.asa {
+  position: relative;
+  margin-left: 3vw;
+  margin-top: 20vh;
+  width: 0;
+  height: 0;
+  border-radius: 10px;
+  border-top: 10px solid black;
+  border-left: 20px solid black;
+  border-right: 20px solid black;
+  border-bottom: 50vh solid black;
+}
+
+.middleF {
+  border: 3px solid black;
+  height: 10vh;
+}
+.square {
+  position: absolute;
+  border: 4px solid black;
+  height: 8vh;
+  width: 12vw;
+}
+
+.downsideFridge {
+  border: 5px solid black;
+  height: 140vh;
+}
+
+.leftfoot {
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  border-top: 10px solid black;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 0.5vh solid black;
+}
+
+.rightfoot {
+  width: 0;
+  height: 0;
+  margin-left: 94.3vw;
+  margin-top: -2vh;
+  border-top: 10px solid black;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 0.5vh solid black;
+}
+
+#iman1 {
+  position: absolute;
+  background-color: azure;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: grab;
+  top: 27vh;
+  left: 24vw;
+  z-index: 1000;
+}
+
+#iman2 {
+  position: absolute;
+  background-color: azure;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: grab;
+  top: 45vh;
+  left: 49vw;
+  z-index: 1000;
+}
+
+#iman3 {
+  position: absolute;
+  background-color: azure;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: grab;
+  top: 52vh;
+  left: 73vw;
+  z-index: 1000;
+}
+
+#iman4 {
+  position: absolute;
+  background-color: azure;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: grab;
+  top: 140vh;
+  left: 24vw;
+  z-index: 1000;
+}
+
+.sticked {
+  background-color: orange;
+  position: inherit;
+  height: 30vh;
+  width: 15vw;
+  margin: 0;
+  left: 20vw;
+  top: 20vh;
+  border-radius: 10px;
+  padding: 19px 10px 10px 10px;
+  cursor: drop;
+}
+
+.sticked2 {
+  background-color: rgb(198, 57, 198);
+  position: inherit;
+  height: 38vh;
+  width: 15vw;
+  margin: 0;
+  left: 45vw;
+  top: 38vh;
+  border-radius: 10px;
+  padding: 19px 10px 10px 10px;
+}
+
+.sticked3 {
+  background-color: green;
+  position: inherit;
+  height: 38vh;
+  width: 15vw;
+  margin: 0;
+  left: 70vw;
+  top: 44vh;
+  border-radius: 10px;
+  padding: 19px 10px 10px 10px;
+}
+
+.sticked4 {
+  background-color: white;
+  position: inherit;
+  height: 30vh;
+  width: 30vw;
+  margin: 0;
+  left: 20vw;
+  top: -50vh;
+  border-radius: 10px;
+  padding: 19px 10px 10px 10px;
+}
+
+#myImage {
+  background-color: whitesmoke;
+  width: 70px;
+  height: 80px;
+  position: inherit;
+  left: 11vw;
+  top: 24vh;
+  transform: rotate(-15deg);
+  z-index: 100;
+  padding: 10px 10px 30px 10px;
+  border: 1px solid black;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.cinta {
+  width: 30px;
+  height: 0;
+  border-top: 10px solid rgb(176, 176, 97);
+  border-left: 3px solid rgb(176, 176, 97);
+  border-right: 3px solid rgb(176, 176, 97);
+  border-bottom: 3px solid rgb(176, 176, 97);
+  border-radius: 20px;
+}
+#cinta1 {
+  position: absolute;
+  transform: rotate(15deg);
+  left: 15vw;
+  top: 34vh;
+  z-index: 101;
+}
+
+#cinta2 {
+  position: inherit;
+  transform: rotate(15deg);
+  left: 11vw;
+  top: 42vh;
+  z-index: 101;
+
+}
+#cinta3 {
+  position: fixed;
+  transform:translateX(-50%);
+  left: 5vw;
+  top: 1.5vh;
+  transform: rotate(15deg);
+  z-index: 101;
+
+}
+.habilidades-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.habilidades {
+  margin-top: 5px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  background-color: blue;
+  padding: 4px;
+  border-radius: 10px;
+}
+.experiencia {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+}
+.experiencia-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+}
+
+#page {
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+#zoom-container {
+  width: 100%;
+  height: 100vh;
+  transition: transform 0.2s ease;
+  transform-origin: center center;
+}
+
+.cv-container{
+  width: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: orange;
+  padding: 10px;
+}
