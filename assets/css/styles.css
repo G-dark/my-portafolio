@@ -400,3 +400,9 @@ footer {
   background-color: orange;
   padding: 10px;
 }
+
+.noselect {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none;     /* IE10+/Edge */
+}

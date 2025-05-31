@@ -5,7 +5,9 @@ export function configureTheVarsForBeginning(iman, dragstate) {
     dragstate.offsetX = e.clientX - iman.offsetLeft;
     dragstate.offsetY = e.clientY - iman.offsetTop;
     iman.style.cursor = "grabbing";
+    document.body.classList.add("noselect"); // evita selección mientras arrastras
   });
+
 }
 export function changeVarsWhenMouseMoves(iman, dragstate) {
   // add event listener to change the var when the mouse moves
@@ -15,6 +17,7 @@ export function changeVarsWhenMouseMoves(iman, dragstate) {
       iman.style.top = e.clientY - dragstate.offsetY + "px";
     }
   });
+
 }
 
 export function finishMovement(iman, dragstate) {
@@ -22,7 +25,9 @@ export function finishMovement(iman, dragstate) {
   document.addEventListener("mouseup", () => {
     dragstate.isDragging = false;
     iman.style.cursor = "grab";
+    document.body.classList.remove("noselect");
   });
+
 }
 
 export function setEventListener2NShowModal(element, number) {
@@ -40,8 +45,8 @@ export function showModal(element, number) {
     document.getElementById("modal-container").innerHTML = `
         <div class="overlay" onclick="cerrarModal()"></div>
         <div id="page" class="modal">
-         <div style="margin-top: 10px; display:flex; flex-direction:row; justify-content:end;">
-           <button style = z-index: 1001; "background-color:white; border:none;"onclick="cerrarModal()">X</button>
+          <div style="margin-top: 10px; display:flex; flex-direction:row; justify-content:end;">
+           <button style = "z-index: 1003 ;background-color:transparent; border:none;"onclick="cerrarModal()">X</button>
           </div>
         <div id="page" style="position:sticked;">
         <div id="cinta3" class="cinta"></div>
