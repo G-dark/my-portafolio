@@ -225,6 +225,19 @@ img {
   z-index: 1000;
 }
 
+#iman5 {
+  position: absolute;
+  background-color: azure;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: grab;
+  top: 170vh;
+  left: 24vw;
+  z-index: 1000;
+}
+
 .sticked {
   background-color: orange;
   position: inherit;
@@ -241,7 +254,7 @@ img {
 .sticked2 {
   background-color: rgb(198, 57, 198);
   position: inherit;
-  height: 38vh;
+  height: 40vh;
   width: 15vw;
   margin: 0;
   left: 45vw;
