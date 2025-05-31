@@ -16,8 +16,8 @@ for (const [iman, dragstate] of imans) {
   finishMovement(iman, dragstate);
 }
 // make zoom to a sticked
-for (const element of elements) {
-  setEventListener2NShowModal(element);
+for (let i = 0; i < elements.length; ++i) {
+  setEventListener2NShowModal(elements[i], i + 1);
 }
 // make zoom in and out to all the page
 doingZoomOfAllScreen(zoomContainer);

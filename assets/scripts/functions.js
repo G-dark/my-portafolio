@@ -25,19 +25,33 @@ export function finishMovement(iman, dragstate) {
   });
 }
 
-export function setEventListener2NShowModal(element) {
+export function setEventListener2NShowModal(element, number) {
   element.addEventListener("mousedown", () => {
-    showModal(element);
+    showModal(element, number);
   });
 }
 
-export function showModal(element) {
+export function showModal(element, number) {
   // Aplicar desenfoque al fondo
   document.querySelector(".background").classList.add("blurred");
 
   // Inyectar HTML del modal
+  if (number == 4) {
+    document.getElementById("modal-container").innerHTML = `
+        <div class="overlay" onclick="cerrarModal()"></div>
+        <div id="page" class="modal">
+         <div style="margin-top: 10px; display:flex; flex-direction:row; justify-content:end;">
+           <button style = z-index: 1001; "background-color:white; border:none;"onclick="cerrarModal()">X</button>
+          </div>
+        <div id="page" style="position:sticked;">
+        <div id="cinta3" class="cinta"></div>
+          ${element.innerHTML}
+        </div>
 
-  document.getElementById("modal-container").innerHTML = `
+        </div>
+      `;
+  } else {
+        document.getElementById("modal-container").innerHTML = `
         <div class="overlay" onclick="cerrarModal()"></div>
         <div id="page" class="modal">
          <div style="margin-top: 10px; display:flex; flex-direction:row; justify-content:end;">
@@ -49,6 +63,8 @@ export function showModal(element) {
 
         </div>
       `;
+  }
+
   makeZoom(1.5);
 }
 
