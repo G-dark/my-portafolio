@@ -194,8 +194,8 @@ img {
   border: 1px solid black;
   border-radius: 4px;
   cursor: grab;
-  top: 45vh;
-  left: 49vw;
+  top: 43vh;
+  left: 47vw;
   z-index: 1000;
 }
 
@@ -207,7 +207,7 @@ img {
   border: 1px solid black;
   border-radius: 4px;
   cursor: grab;
-  top: 52vh;
+  top: 50vh;
   left: 73vw;
   z-index: 1000;
 }
@@ -233,8 +233,21 @@ img {
   border: 1px solid black;
   border-radius: 4px;
   cursor: grab;
-  top: 170vh;
-  left: 24vw;
+  top: 190vh;
+  left: 30vw;
+  z-index: 1000;
+}
+
+#iman6 {
+  position: absolute;
+  background-color: azure;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: grab;
+  top: 230vh;
+  left: 70vw;
   z-index: 1000;
 }
 
@@ -283,6 +296,18 @@ img {
   margin: 0;
   left: 20vw;
   top: -50vh;
+  border-radius: 10px;
+  padding: 19px 10px 10px 10px;
+}
+
+.sticked5 {
+  background-color: white;
+  position: inherit;
+  height: 30vh;
+  width: 30vw;
+  margin: 0;
+  left: 20vw;
+  top: 5vh;
   border-radius: 10px;
   padding: 19px 10px 10px 10px;
 }
@@ -405,4 +430,13 @@ footer {
   user-select: none;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none;     /* IE10+/Edge */
+}
+
+.proyecto-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: beige;
+  width: 80px;
+  margin-left: 20px;
 }

@@ -46,6 +46,14 @@ const dragstate5 = {
   offsetX: 0,
   offsetY: 0,
 };
+
+const iman6 = document.getElementById("iman6"); // select the element of the document
+const dragstate6 = {
+  isDragging: false, // set the var track the drag on false by default
+  // deffine vars for controll the offsets
+  offsetX: 0,
+  offsetY: 0,
+};
 const elemento2show1 = document.querySelector(".sticked-container");
 const elemento2show2 = document.querySelector(".sticked-container2");
 const elemento2show3 = document.querySelector(".sticked-container3");
@@ -60,6 +68,8 @@ export const imans = [
   [iman3, dragstate3],
   [iman4, dragstate4],
   [iman5, dragstate5],
+  [iman6, dragstate6],
+
 ];
 
 export const elements = [
