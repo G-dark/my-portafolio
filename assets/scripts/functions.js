@@ -77,11 +77,15 @@ export function makeZoom(escala) {
   document.getElementById("page").style.transform = `scale(${escala})`;
 }
 
+export function makeZoom2(contenedor, escala) {
+  contenedor.style.transform = `scale(${escala})`;
+}  
+
 function cerrarModal() {
   // Quitar el modal y el desenfoque
   document.getElementById("modal-container").innerHTML = "";
   document.querySelector(".background").classList.remove("blurred");
-  hacerZoom(1);
+  makeZoom(1);
 }
 window.cerrarModal = cerrarModal;
 

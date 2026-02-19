@@ -1,9 +1,74 @@
 * {
   margin: 0;
   padding: 0;
-}
-body {
   cursor: url("../images/cursor/cursor.png"), auto;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot");
+  src:
+    url("../fonts/icomoon.eot") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf") format("truetype"),
+    url("../fonts/icomoon.woff") format("woff"),
+    url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gmail:before {
+  content: "\e900";
+  font-size: 20px;
+  color: #d14836;
+}
+.icon-whatsapp:before {
+  content: "\e901";
+  color: #25d366;
+}
+
+.icon-arrowRight:before {
+  content: "\e902";
+  font-size: 20px;
+  color: white;
+  position: absolute;
+}
+.icon-arrowLeft:before {
+  content: "\e903";
+  font-size: 20px;
+  color: white;
+  position: absolute;
+}
+.icon-arrowDown:before {
+  content: "\e904";
+  font-size: 20px;
+  color: white;
+  position: absolute;
+}
+.icon-arrowUp:before {
+  content: "\e905";
+  font-size: 20px;
+  color: white;
+  position: absolute;
+}
+
+body {
   background-color: white;
   margin: 0;
   height: 100vh;
@@ -21,7 +86,6 @@ body {
   height: 100vh;
   transition: filter 0.3s ease;
 }
-
 
 .blurred {
   filter: blur(8px);
@@ -56,7 +120,8 @@ body {
   font-size: 13px;
 }
 
-a, button {
+a,
+button {
   cursor: url("../images/cursor/mano-cursor.png"), auto;
 }
 
@@ -123,6 +188,62 @@ img {
   height: 100vh;
 }
 
+.upsideFridgeSide {
+  border: 5px solid black;
+  height: 144vh;
+  width: 20vw;
+  margin-left: 40vw;
+}
+
+.upsideFridgeBack {
+  border: 5px solid black;
+  height: 144vh;
+  width: 40vw;
+  margin-left: 30vw;
+}
+
+.upFoot {
+  width: 0;
+  height: 0;
+  margin-left: 41vw;
+  border-top: 20px solid black;
+  border-left: 20px solid black;
+  border-right: 20px solid black;
+  border-bottom: 0.5vh solid black;
+}
+
+.downFoot {
+  width: 0;
+  height: 0;
+  margin-left: 57.3vw;
+  margin-top: -3.3vh;
+  border-top: 20px solid black;
+  border-left: 20px solid black;
+  border-right: 20px solid black;
+  border-bottom: 0.5vh solid black;
+}
+
+.leftFoot {
+  width: 0;
+  height: 0;
+  margin-left: 34vw;
+  border-top: 20px solid black;
+  border-left: 20px solid black;
+  border-right: 20px solid black;
+  border-bottom: 0.5vh solid black;
+}
+
+.rightFoot {
+  width: 0;
+  height: 0;
+  margin-left: 64.3vw;
+  margin-top: -3.3vh;
+  border-top: 20px solid black;
+  border-left: 20px solid black;
+  border-right: 20px solid black;
+  border-bottom: 0.5vh solid black;
+}
+
 .asa {
   position: relative;
   margin-left: 3vw;
@@ -134,6 +255,157 @@ img {
   border-left: 20px solid black;
   border-right: 20px solid black;
   border-bottom: 50vh solid black;
+}
+
+.parrilla {
+  position: absolute;
+  top: 60vh;
+  left: 35vw;
+  border: 3px solid black;
+  height: 110vh;
+  width: 30vw;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.linea {
+  position: absolute;
+  background-color: transparent;
+  top: 70vh;
+  left: 35vw;
+  width: 29.6vw;
+  padding: 10px 5px;
+  border-top: 3px solid black;
+}
+
+.linea2 {
+  position: absolute;
+  background-color: transparent;
+  top: 80vh;
+  left: 35vw;
+  width: 29.6vw;
+  padding: 10px 5px;
+  border-top: 3px solid black;
+}
+
+.linea3 {
+  position: absolute;
+  background-color: transparent;
+  top: 90vh;
+  left: 35vw;
+  width: 29.6vw;
+  padding: 10px 5px;
+  border-top: 3px solid black;
+}
+
+.linea4 {
+  position: absolute;
+  background-color: transparent;
+  top: 100vh;
+  left: 35vw;
+  width: 29.6vw;
+  padding: 10px 5px;
+  border-top: 3px solid black;
+}
+
+.linea5 {
+  position: absolute;
+  background-color: transparent;
+  top: 110vh;
+  left: 35vw;
+  width: 29.6vw;
+  padding: 10px 5px;
+  border-top: 3px solid black;
+}
+
+.linea6 {
+  position: absolute;
+  background-color: transparent;
+  top: 120vh;
+  left: 35vw;
+  width: 29.6vw;
+  padding: 10px 5px;
+  border-top: 3px solid black;
+}
+
+.linea7 {
+  position: absolute;
+  background-color: transparent;
+  top: 130vh;
+  left: 35vw;
+  width: 29.6vw;
+  padding: 10px 5px;
+  border-top: 3px solid black;
+}
+
+.linea8 {
+  position: absolute;
+  background-color: transparent;
+  top: 140vh;
+  left: 35vw;
+  width: 29.6vw;
+  padding: 10px 5px;
+  border-top: 3px solid black;
+}
+
+.linea9 {
+  position: absolute;
+  background-color: transparent;
+  top: 150vh;
+  left: 35vw;
+  width: 29.6vw;
+  padding: 10px 5px;
+  border-top: 3px solid black;
+}
+
+.linea10 {
+  position: absolute;
+  background-color: transparent;
+  top: 160vh;
+  left: 35vw;
+  width: 29.6vw;
+  padding: 10px 5px;
+  border-top: 3px solid black;
+}
+
+.lineaV {
+  position: absolute;
+  background-color: transparent;
+  top: 60vh;
+  left: 45vw;
+  height: 107.8vh;
+  padding: 10px 5px;
+  border-left: 3px solid black;
+}
+
+.lineaV2 {
+  position: absolute;
+  background-color: transparent;
+  top: 60vh;
+  left: 55vw;
+  height: 107.8vh;
+  padding: 10px 5px;
+  border-left: 3px solid black;
+}
+
+.lineaV2:hover,
+.lineaV:hover {
+  border-left: 3px solid red;
+}
+.linea:hover,
+.linea2:hover,
+.linea3:hover,
+.linea4:hover,
+.linea5:hover,
+.linea6:hover,
+.linea7:hover,
+.linea8:hover,
+.linea9:hover,
+.linea10:hover {
+  border-top: 3px solid red;
+}
+.parrilla:hover {
+  border: 3px solid red;
 }
 
 .middleF {
@@ -155,21 +427,21 @@ img {
 .leftfoot {
   width: 0;
   height: 0;
-  margin-left: 3px;
-  border-top: 10px solid black;
-  border-left: 10px solid black;
-  border-right: 10px solid black;
+  margin-left: 10vw;
+  border-top: 20px solid black;
+  border-left: 20px solid black;
+  border-right: 20px solid black;
   border-bottom: 0.5vh solid black;
 }
 
 .rightfoot {
   width: 0;
   height: 0;
-  margin-left: 94.3vw;
-  margin-top: -2vh;
-  border-top: 10px solid black;
-  border-left: 10px solid black;
-  border-right: 10px solid black;
+  margin-left: 86.3vw;
+  margin-top: -3.4vh;
+  border-top: 20px solid black;
+  border-left: 20px solid black;
+  border-right: 20px solid black;
   border-bottom: 0.5vh solid black;
 }
 
@@ -303,8 +575,20 @@ img {
 .sticked5 {
   background-color: white;
   position: inherit;
-  height: 30vh;
-  width: 30vw;
+  height: 32vh;
+  width: 28vw;
+  margin: 0;
+  left: 20vw;
+  top: 5vh;
+  border-radius: 10px;
+  padding: 19px 10px 10px 10px;
+  overflow-x: auto;
+}
+
+.sticked6 {
+  background-color: white;
+  height: 12vh;
+  width: 15vw;
   margin: 0;
   left: 20vw;
   top: 5vh;
@@ -354,16 +638,14 @@ img {
   left: 11vw;
   top: 42vh;
   z-index: 101;
-
 }
 #cinta3 {
   position: fixed;
-  transform:translateX(-50%);
+  transform: translateX(-50%);
   left: 5vw;
   top: 1.5vh;
   transform: rotate(15deg);
   z-index: 101;
-
 }
 .habilidades-container {
   display: flex;
@@ -402,6 +684,14 @@ footer {
   background-color: grey;
 }
 
+.footer2 {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  transform: scale(0.6);
+  margin-top: -1vh;
+}
+
 #page {
   transform-origin: top left;
   transition: transform 0.3s ease;
@@ -414,7 +704,7 @@ footer {
   transform-origin: center center;
 }
 
-.cv-container{
+.cv-container {
   width: 10vw;
   display: flex;
   flex-direction: row;
@@ -429,14 +719,58 @@ footer {
 .noselect {
   user-select: none;
   -webkit-user-select: none; /* Safari */
-  -ms-user-select: none;     /* IE10+/Edge */
+  -ms-user-select: none; /* IE10+/Edge */
 }
 
 .proyecto-content {
+  position: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: beige;
-  width: 80px;
+  width: 10vw;
   margin-left: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.botonZO {
+  border-radius: 40vw;
+  background-color: black;
+  position: absolute;
+  height: 6vh;
+  top: 256vh;
+  left: 10vw;
+  border: 5px solid black;
+}
+
+.botonZO2 {
+  border-radius: 40vw;
+  color: gray;
+  background-color: gray;
+  position: absolute;
+  height: 6vh;
+  top: 256vh;
+  left: 5vw;
+  border: 5px solid gray;
+}
+.turner {
+  border-radius: 40vw;
+  background-color: black;
+  position: absolute;
+  height: 6vh;
+  top: 250vh;
+  right: -10vw;
+  padding: 40px;
+  border: 5px solid black;
+}
+.turner2 {
+  border-radius: 40vw;
+  background-color: black;
+  position: absolute;
+  height: 6vh;
+  top: 160vh;
+  right: 20vw;
+  padding: 40px;
+  border: 5px solid black;
 }
