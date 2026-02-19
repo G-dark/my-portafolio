@@ -1,3 +1,4 @@
+
 // Imans
 
 // Iman 1
@@ -59,6 +60,13 @@ const elemento2show2 = document.querySelector(".sticked-container2");
 const elemento2show3 = document.querySelector(".sticked-container3");
 const elemento2show4 = document.querySelector(".sticked-container4");
 const elemento2show5 = document.querySelector(".sticked-container5");
+const elemento2show6 = document.querySelector(".sticked-container6");
+const elemento3show1 = document.querySelector(".proyecto-content1");
+const elemento3show2 = document.querySelector(".proyecto-content2");
+const elemento3show3 = document.querySelector(".proyecto-content3");
+const elemento3show4 = document.querySelector(".proyecto-content4");
+const elemento3show5 = document.querySelector(".proyecto-content5");
+const elemento3show6 = document.querySelector(".proyecto-content6");
 
 export const zoomContainer = document.getElementById("zoom-container");
 
@@ -78,6 +86,12 @@ export const elements = [
   elemento2show3,
   elemento2show4,
   elemento2show5,
+  elemento2show6,
+  elemento3show1,
+  elemento3show2,
+  elemento3show3,
+  elemento3show4,
+  elemento3show5,
+  elemento3show6,
 ];
-
 

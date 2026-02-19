@@ -5,6 +5,7 @@ import {
   finishMovement,
   setEventListener2NShowModal,
   doingZoomOfAllScreen,
+  makeZoom2,
 } from "./functions.js";
 // imports required of the variables setted
 import { imans, elements, zoomContainer } from "./settingVariables.js";
@@ -19,5 +20,17 @@ for (const [iman, dragstate] of imans) {
 for (let i = 0; i < elements.length; ++i) {
   setEventListener2NShowModal(elements[i], i + 1);
 }
+
 // make zoom in and out to all the page
 doingZoomOfAllScreen(zoomContainer);
+
+function zoomOut() {
+  makeZoom2(zoomContainer, 0.6);
+}
+
+function zoomIn() {
+  makeZoom2(zoomContainer, 1);
+}
+
+window.zoomOut = zoomOut;
+window.zoomIn = zoomIn;
