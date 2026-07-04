@@ -168,9 +168,10 @@ img {
   position: absolute;
   width: 0;
   height: 0;
+  margin-top: -0.1vh;
   border-left: 6vw solid white;
   border-right: 0px solid transparent;
-  border-bottom: 11.6vh solid beige;
+  border-bottom: 10.6vh solid beige;
 }
 .triangulo2 {
   position: absolute;
